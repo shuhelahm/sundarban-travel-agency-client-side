@@ -1,0 +1,15 @@
+.service-img{
+    border-radius: 5px;
+    height: 150px;
+}
+
+.service-card {
+    box-shadow: 1px 1px 4px 1px #0b5dd74b;
+    height: 380px;
+    border-radius: 2px;
+}
+.service-card p{
+    text-align: justify;
+    line-height: normal;
+    font-size: 12px;
+}

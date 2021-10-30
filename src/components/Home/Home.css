@@ -1,0 +1,53 @@
+.banner-img{
+    height: 400px;
+}
+
+.about-us-section{
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.about-us-img-section{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-us-img-section img{
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.popular-destination-section{
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.popular-destination-card{
+    position: relative;
+}
+
+.popular-destination-img{
+   border-radius: 5px;
+}
+.popular-destination-text{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .about-us-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .popular-destination-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import AddANewService from './components/AddANewService/AddANewService';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Login from './components/Login/Login';
+import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
+import MyOrders from './components/MyOrders/MyOrders';
+import NotFound from './components/NotFound/NotFound';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import AuthProvider from './contexts/AuthProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AuthProvider>
+      <BrowserRouter>
+        <Header></Header>
+        <Switch>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/addanewservice">
+            <AddANewService></AddANewService>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <PrivateRoute path="/myorders">
+            <MyOrders></MyOrders>
+          </PrivateRoute>
+          <PrivateRoute path="/manageallorders">
+            <ManageAllOrders></ManageAllOrders>
+          </PrivateRoute>
+          {/* <Route path="/register">
+            <Register></Register>
+          </Route> */}
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="**">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+        <Footer></Footer>
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
