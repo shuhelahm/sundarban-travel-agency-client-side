@@ -1,4 +1,4 @@
-# Sundarban Travel Agency Client Site
+# Sundarban Travel Agency Client Site Code
 
 [Visit our website](https://github.com/facebook/create-react-app).
 
