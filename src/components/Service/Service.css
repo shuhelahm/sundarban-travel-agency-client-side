@@ -8,8 +8,19 @@
     height: 380px;
     border-radius: 2px;
 }
+
 .service-card p{
     text-align: justify;
     line-height: normal;
     font-size: 12px;
+}
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .service-card {
+        height: 440px;
+    }
+    
 }
