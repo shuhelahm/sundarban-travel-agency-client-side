@@ -7,6 +7,7 @@ import Login from './components/Login/Login';
 import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
 import MyOrders from './components/MyOrders/MyOrders';
 import NotFound from './components/NotFound/NotFound';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './contexts/AuthProvider';
 
@@ -26,15 +27,15 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <PrivateRoute path="/myorders">
+          <Route path="/myorders">
             <MyOrders></MyOrders>
-          </PrivateRoute>
-          <PrivateRoute path="/manageallorders">
+          </Route>
+          <Route path="/manageallorders">
             <ManageAllOrders></ManageAllOrders>
-          </PrivateRoute>
-          {/* <Route path="/register">
-            <Register></Register>
-          </Route> */}
+          </Route>
+          <Route path="/services/placeorder/:id">
+            <PlaceOrder></PlaceOrder>
+          </Route>
           <Route exact path="/">
             <Home></Home>
           </Route>

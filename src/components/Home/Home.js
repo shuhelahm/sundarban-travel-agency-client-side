@@ -4,11 +4,13 @@ import './Home.css';
 const Home = () => {
     return (
         <div>
-            
+          
             {/* banner section */}
             <div>
                 <img className='w-100 banner-img' src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
             </div>
+
+            <MainOfferings></MainOfferings>
 
             {/* about us section */}
             <div className='about-us-section d-grid mx-auto my-5'>
@@ -63,7 +65,6 @@ const Home = () => {
                     <p className='popular-destination-text '>UAE</p>
                 </div>
             </div>
-            <MainOfferings></MainOfferings>
         </div>
     );
 };
