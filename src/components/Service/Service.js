@@ -2,6 +2,7 @@ import React from 'react';
 import './Service.css';
 
 const Service = ({service}) => {
+    console.log(service);
     return (
         <div>
             <div className='service-card py-2 px-2'>
