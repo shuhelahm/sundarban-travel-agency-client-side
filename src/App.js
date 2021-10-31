@@ -29,6 +29,9 @@ function App() {
           <Route path="/myorders">
             <MyOrders></MyOrders>
           </Route>
+          <Route path="/services/myorders/:id">
+            <MyOrders></MyOrders>
+          </Route>
           <Route path="/manageallorders">
             <ManageAllOrders></ManageAllOrders>
           </Route>

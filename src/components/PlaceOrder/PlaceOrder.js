@@ -16,10 +16,10 @@ const PlaceOrder = () => {
             <h4>Place Order</h4>
                 <form>
                     <p>Service id: {id}</p>
-                    <p>Service: {service.name}</p>
-                    <p>Description: {service.description}</p>
-                    <p>Your name: <input type="text" /></p>
-                    <p>Your address: <input type="text" /></p>
+                    <p>{service.name}</p>
+                    <p>Name: <input type="text" /></p>
+                    <p>Email: <input type="email" name="" id="" /></p>
+                    <p>Address: <input type="text" /></p>
                     <input className='btn btn-primary' type="submit" value='submit'/>
                 </form>
         </div>
