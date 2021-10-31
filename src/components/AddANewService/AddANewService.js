@@ -11,7 +11,7 @@ const AddANewService = () => {
         const description = descriptionRef.current.value;
         const imgUrl = urlRef.current.value;
         const newUser = {name, description, imgUrl};
-        fetch('https://guarded-mesa-03173.herokuapp.com/:5000/services', {
+        fetch('https://guarded-mesa-03173.herokuapp.com/services', {
             method:'POST',
             headers:{
                 'content-type': 'application/json'
