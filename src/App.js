@@ -8,7 +8,6 @@ import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
 import MyOrders from './components/MyOrders/MyOrders';
 import NotFound from './components/NotFound/NotFound';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AuthProvider from './contexts/AuthProvider';
 
 function App() {

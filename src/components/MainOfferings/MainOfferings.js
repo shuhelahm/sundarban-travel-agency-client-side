@@ -22,7 +22,7 @@ const MainOfferings = () => {
                  :
                 <div className='service-sec d-grid mx-auto my-5'>
                     {
-                        services.map(service => <Service service={service}></Service>)
+                        services.map(service => <Service key={service._id} service={service}></Service>)
                     }
                 </div>
             } 
