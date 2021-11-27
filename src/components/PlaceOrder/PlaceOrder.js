@@ -19,7 +19,6 @@ const PlaceOrder = () => {
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const newOrder = {name, email};
-        console.log('handle place order clicked')
         fetch('https://guarded-mesa-03173.herokuapp.com/orders', {
             method:'POST',
             headers:{
@@ -35,6 +34,7 @@ const PlaceOrder = () => {
                 <form onSubmit={handlePlaceOrder}>
                     <p>Service id: {id}</p>
                     <p>{service.name}</p>
+                    <p>Service name: <input type="text"/></p>
                     <p>Name: <input type="text" ref={nameRef}/></p>
                     <p>Email: <input type="email" name="" id="" ref={emailRef}/></p>
                     <input className='btn btn-primary' type="submit" value='submit'/>
